@@ -2,6 +2,9 @@
 .komodotools
 *.komodoproject
 
-
-public/assets
-runtime
+# Runtime and composer related files
+public/assets/*
+runtime/*
+vendor/*
+log/*
+bin/*
