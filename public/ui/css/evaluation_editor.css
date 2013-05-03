@@ -1,0 +1,102 @@
+
+.possible-question {
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 3px;
+  color: #333;
+  font-weight: bold;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+#question-holder {
+  border: 1px solid #ccc;
+  width: 650px;
+  margin-top: 5px;
+  background: #eee;
+  padding: 0px;
+}
+
+#question-list {
+  height: 100%;
+  width: auto;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.holder-will-accept {
+  border: 2px dashed #4BA314;
+}
+
+.type-placeholder {
+  display: none;
+}
+
+.question-item {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.question-text {
+  cursor: hand;
+  padding: 3px;
+  background: #ddd;
+  border-bottom: 1px solid #ccc;
+}
+.question-text input {
+  padding: 2px !important;
+  font-size: 12px !important;
+  margin: 0 !important;
+  width: 350px;
+  clear: none !important;
+}
+
+.question-body {
+  background: #fff;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.remove-question-btn, .config-question-btn {
+  float: right;
+  margin-top: 5px !important;
+  margin-right: 3px !important;
+  cursor: pointer;
+}
+
+.config-question-btn {
+  margin-right: 8px;
+}
+
+.loading {
+  padding: 5px;
+  margin: 15px;
+  text-align: center;
+}
+
+.loading img {
+  display: inline-block;
+  text-align: center;
+}
+
+.question-instructions {
+  color: #666;
+}
+
+.question-hover-placeholder {
+  border: 1px dashed #ccc;
+  background: #fff;
+  height: 100px;
+  magin-bottom: 100px !important;
+  clear: both;
+  display: inline-block;
+  width: 630px;
+}
+
+.question-body-content {
+  border-top: 1px solid #ccc;
+  padding-top: 7px;
+  margin-top: 3px;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+  phpdoc configuration file (http://www.phpdoc.org)
+  
+  See (http://www.phpdoc.org/docs/latest/for-users/configuration.html) on how to use.
+  
+  To run phpdoc, make sure you install pear and phpdoc and type in the console
+  
+    `phpdoc`
+    
+-->
+<phpdoc>
+  
+  <!-- Files and Directories to Parse -->
+  <files>
+    <!-- <directory>framework</directory> -->
+    <directory>config</directory>
+    <directory>vendor</directory>
+    <directory>app/components</directory>
+    <directory>app/models</directory>
+    <directory>app/controllers</directory>
+    <directory>app/helpers</directory>
+  </files>
+  
+  <!-- Set output directory to /doc -->
+  <parser>
+    <target>doc</target>
+  </parser>
+  <transformer>
+    <target>doc</target>
+  </transformer>
+
+</phpdoc>

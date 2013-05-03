@@ -1,0 +1,99 @@
+.group-accept {
+  min-height: 100px;
+}
+
+
+.group-accept li {
+  height: 20px;
+  background: #fff;
+}
+
+.group-accept {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.group-student {
+  cursor: pointer;
+  color: #333;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+
+.group-student i {
+  margin-right: 5px;
+}
+
+#group-default {
+  position: fixed;
+  background: #fff;
+  width: 400px;
+}
+
+
+
+/** Box Specific **/
+.box {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.box-title {
+  vertical-align: middle;
+  background: #eee;
+  padding: 3px;
+  border-bottom: 1px solid #ccc;
+}
+
+.box-title h3 {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: normal;
+}
+
+.box-collapsable .box-title i.box-collapse-icon {
+  cursor: pointer;
+}
+
+.box-content {
+  padding: 2px 3px 2px 3px;
+}
+
+.box-drag-icon {
+  vertical-align: middle;
+  float: right;
+}
+
+.box-collapsed .box-content {
+  display: none;
+}
+
+.box-collapsed .box-title {
+  border-bottom: none;
+}
+
+.box-title input[type='text'] {
+  padding: 3px;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.remove-group-btn {
+  float: right;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-top: 5px !important;
+  margin-right: 5px;
+}
+
+.remove-student-icon {
+  display: block;
+  float: right;
+  margin-top: 5px !important;
+  cursor: pointer;
+}

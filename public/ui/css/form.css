@@ -1,0 +1,66 @@
+/** Forms **/
+/** @TODO: use bootstrap mixins **/
+.form .row {
+  margin-left: 0;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.form .row label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  vertical-align: middle;
+  margin-right: 15px;
+  color: #666;
+}
+
+.form .row input {
+    margin-bottom: 0px;
+}
+
+
+/** Generic Alert Dialog */
+.form .errorSummary {
+    color: #C09853;
+    background-color: #FCF8E3;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
+}
+
+.form .errorSummary {
+    margin-bottom: 15px;
+}
+
+.form .errorSummary p {
+    font-weight: bold;
+}
+
+.row .errorMessage {
+    margin-left: 120px;
+    font-size: 11px;
+    color: #C09853;
+}
+
+.form .row input[type="text"], .form .row input[type="password"] {
+    width: 250px;
+}
+
+.form .row textarea {
+    width: 350px;
+}
+
+.form .row .error {
+    border-color: #C09853;
+    color: #C09853;
+}
+
+.form .buttons {  
+    padding: 19px 20px 20px;
+    padding-left: 120px;
+    background-color: whiteSmoke;
+    border-top: 1px solid #E5E5E5;
+    margin-top: 15px;
+}

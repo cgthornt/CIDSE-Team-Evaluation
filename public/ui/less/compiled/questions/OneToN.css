@@ -1,0 +1,36 @@
+.question-body-OneToN table thead {
+  background: #ccc;
+}
+.question-body-OneToN table th {
+  padding: 1px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.question-body-OneToN table .itm {
+  width: 20px;
+}
+.question-body-OneToN table .expander {
+  width: auto;
+}
+.question-body-OneToN table .the-users {
+  width: auto;
+}
+.question-body-OneToN table td {
+  border: 1px solid #fff;
+  text-align: center;
+}
+.question-body-OneToN table .name-user {
+  text-align: right;
+  padding-right: 5px;
+  background: #eee;
+}
+.question-body-OneToN table input[type="radio"] {
+  line-height: normal;
+  margin: 0;
+}
+.question-body-OneToN table tr:hover td {
+  background: #eee;
+}
+.question-body-OneToN table tr:hover .name-user {
+  background: #ddd;
+}

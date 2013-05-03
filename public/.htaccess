@@ -1,0 +1,30 @@
+# .htaccess | Christopher Thornton
+#
+# This enables "clean url's" in Apache IF the mod_rewrite module is enabled.
+# If mod_rewrite is enabled, then we should forward our requests to "index_rewrite.php"
+#
+# If it is *not* enabled (or .htaccess files are disabled), then Apache should naturally
+# serve "index.php"
+#
+# Note that "index_rewrite.php" defines the constant MOD_REWRITE_ENABLED to true, while
+# regular old "index.php" will define it to false.
+
+# Check to make sure mod_rewrite is enabled. This <IfModule> section will prevent Apache
+# errors if it is not enabled.
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    
+    # Required because I'm using virtual hosts in production
+    RewriteBase / 
+    
+    # if a directory or a file exists, use it directly
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # otherwise forward it to index_rewrite.php
+    RewriteRule . index_rewrite.php
+    
+    # Make the exception for index.php or else the script will not use rewriting
+    RewriteCond %{REQUEST_FILENAME} index.php
+    RewriteRule . index_rewrite.php
+</IfModule>

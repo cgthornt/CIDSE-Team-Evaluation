@@ -1,0 +1,32 @@
+<?php
+  // We want to automatically load the Yii jQuery library on every page
+  Yii::app()->clientScript->registerCoreScript('jquery');
+?><!DOCTYPE html>
+<html>
+<head>
+  <title><?php echo $this->pageTitle; ?></title>
+  <?php
+    echo Html::cssFile(array('bootstrap.min', 'bootstrap-responsive.min', 'layout'));
+    echo Html::scriptFile(array('bootstrap.min', 'application'));
+  ?>
+  <link rel="shortcut icon" href="<?php echo Html::normalizeUrl('favicon.ico'); ?>" type="image/x-icon">
+</head>
+<body>
+<?php
+  $this->renderPartial('/layouts/partials/_header');
+  $this->renderPartial('/layouts/partials/_flashes');
+  $this->renderPartial('/layouts/partials/_breadcrumbs'); 
+?>
+
+<!-- Main Section -->
+<section class="container">
+  <?php echo $content; ?>
+</section>
+<section class="container">
+  <hr>
+  <footer>
+    <p>&copy; Capstone Project 2012</p>
+  </footer>
+</section>
+</body>
+</html>

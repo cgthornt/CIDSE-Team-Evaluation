@@ -1,0 +1,129 @@
+@import "bootstrap/bootstrap";
+
+
+/**
+ * .grid-view
+ *
+ * Modify the default Yii gridview styles to closer resemble that of the Bootstrap framework
+ */
+.grid-view {
+  
+  // For the table, set the table to use the bootstrap styles, make it striped, turn
+  // on cell hovering and give it a shadow.
+  table {
+    .table;
+    .table-striped;
+    .table-hover;
+    // .box-shadow(0 0 5px #888);
+  }
+  
+  // Give the table a border, fix up row cell hovering
+  table.items {
+    border-collapse: separate;
+    // border: 1px solid @grayLight;
+    border: none;
+    border-top: 1px solid @grayLight;
+    // padding: 4px;
+    th {
+      background: @grayLighter;
+      a { color: @linkColor; }
+      a:hover { color: @linkColorHover; }
+    }
+    tr.odd {
+      background: @tableBackgroundAccent;
+    }
+    tr.even {
+      background: none;
+    }
+  }
+  
+  // The summary that says "displaying 1-x of y results"
+  .summary {
+    display: block;
+    color: #666;
+    font-size: 11px;
+    width: 100%;
+    text-align: right;
+  }
+  
+  // Fix up the filters section. We need to fix up the text boxes.
+  tr.filters {
+    input[type='text'] {
+      width: 95%;
+      padding: 2px 3px 2px 3px;
+      margin: 0px;
+      font-size: 12px;
+      line-height: normal;
+      border-radius: 0px;
+    }
+  }
+}
+
+
+/**
+ * .form
+ *
+ * Modify the default yii forms so that they closer resemble the form styles of the yii framework
+ */
+.form {
+  
+  // The error summary should look like a red alert dialog
+  .errorSummary {
+    .alert;
+    .alert-error;
+    p {
+      font-weight: bold;
+    }
+  }
+  .errorMessage {
+    color: @red;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .control-label.error {
+    color: @red;
+  }
+  
+  span.required {
+    color: @red;
+  }
+  
+  input[type='text'], input[type='password'] {
+    width: 350px;
+  }
+  textarea {
+    width: 400px;
+  }
+  
+  // For successful form fields, make the form field seem successful and for unsuccessful forms,
+  // make it seem unsuccessful by adding a green / red border to the text field. These are provided
+  // by mixins from the Bootstrap framework.
+  .controls.success { .formFieldState(@successText, @successText, @successBackground); }
+  .controls.error { .formFieldState(@errorText, @errorText, @errorBackground); }
+  
+  // The form submission should by default have a button style
+  .row.buttons {
+    input[type='submit'] {
+      .btn;
+      .btn-primary;
+    }
+  }
+}
+.question-config {
+  .item.success { .formFieldState(@successText, @successText, @successBackground); }
+  .item.error { .formFieldState(@errorText, @errorText, @errorBackground); }
+  // The error summary should look like a red alert dialog
+  .errorSummary {
+    .alert;
+    .alert-error;
+    p {
+      font-weight: bold;
+    }
+  }
+  .errorMessage {
+    color: @red;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+

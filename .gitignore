@@ -1,0 +1,9 @@
+# Komodo Project Files
+.komodotools
+*.komodoproject
+
+# Composer
+.composer
+
+# Documentation
+doc

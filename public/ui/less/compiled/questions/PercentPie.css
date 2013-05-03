@@ -1,0 +1,60 @@
+.question-body-PercentPie table thead {
+  background: #ccc;
+}
+.question-body-PercentPie table th {
+  padding: 1px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.question-body-PercentPie table .itm {
+  width: 20px;
+}
+.question-body-PercentPie table .expander {
+  width: auto;
+}
+.question-body-PercentPie table .the-users {
+  width: auto;
+}
+.question-body-PercentPie table td {
+  border: 1px solid #fff;
+  text-align: center;
+}
+.question-body-PercentPie table .name-user {
+  text-align: right;
+  padding-right: 5px;
+  background: #eee;
+}
+.question-body-PercentPie table input[type="radio"] {
+  line-height: normal;
+  margin: 0;
+}
+.question-body-PercentPie table tr:hover td {
+  background: #eee;
+}
+.question-body-PercentPie table tr:hover .name-user {
+  background: #ddd;
+}
+.question-body-PercentPie table .spinner-pie,
+.question-body-PercentPie table .spinner-pie:active,
+.question-body-PercentPie table .spinner-pie:focus {
+  vertical-align: middle;
+  border-radius: 0;
+  line-height: normal;
+  width: 25px !important;
+  height: auto;
+  padding: 2px !important;
+  font-size: 12px;
+  margin-bottom: 0;
+  border: none !important;
+  background-color: transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+}
+.question-body-PercentPie table .spinner-pie:active {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+.question-body-PercentPie .pie-alert {
+  margin-bottom: 5px;
+}
