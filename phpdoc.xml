@@ -5,8 +5,6 @@
   
   See (http://www.phpdoc.org/docs/latest/for-users/configuration.html) on how to use.
   
-  To run phpdoc, make sure you install pear and phpdoc and type in the console
-  
     `phpdoc`
     
 -->
@@ -21,6 +19,7 @@
     <directory>app/models</directory>
     <directory>app/controllers</directory>
     <directory>app/helpers</directory>
+    <directory>.composer</directory>
   </files>
   
   <!-- Set output directory to /doc -->

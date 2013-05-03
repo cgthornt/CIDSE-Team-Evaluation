@@ -5,13 +5,17 @@
   },
   
   "require-dev": {
-    "phpdocumentor/phpdocumentor": "*",
+    "phpdocumentor/phpdocumentor": ">=2.0.0a11",
     "phpunit/phpunit": "3.7.*"
   },
 
+  
+  "minimum-stability": "dev",
+  
+  
   "config": {
     "vendor-dir" : ".composer",
-    "minimum-stability": "dev"
+    "bin-dir": "bin"
   },
   
   "repositories": [{

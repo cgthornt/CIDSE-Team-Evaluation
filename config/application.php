@@ -33,7 +33,8 @@ return array(
   'runtimePath' => dirname(__FILE__) . '/../runtime/',
   
   // Our extensions
-  'extensionPath' => dirname(__FILE__) . '/../vendor/',
+  // Conflicts with default composer
+  // 'extensionPath' => dirname(__FILE__) . '/../vendor/',
   
   'defaultController' => 'welcome',
   'components' => array(
