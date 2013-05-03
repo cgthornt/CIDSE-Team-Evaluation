@@ -2,5 +2,6 @@
 .komodotools
 *.komodoproject
 
-# Composer
-.composer
+
+public/assets
+runtime
